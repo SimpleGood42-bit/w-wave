@@ -1,0 +1,305 @@
+@font-face {
+    font-family: 'Muller';
+    src: local('MullerBold'),
+      url('../fonts/MullerBold.woff2') format("woff2"),
+      url('../fonts/MullerBold.woff') format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Muller';
+    src: local('MullerLightitalic'),
+      url('../fonts/MullerLightitalic.woff2') format("woff2"),
+      url('../fonts/MullerLightitalic.woff') format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Muller';
+    src: local('MullerMedium'),
+      url('../fonts/MullerMedium.woff2') format("woff2"),
+      url('../fonts/MullerMedium.woff') format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Muller';
+    src: local('MullerRegular'),
+      url('../fonts/MullerRegular.woff2') format("woff2"),
+      url('../fonts/MullerRegular.woff') format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Muller';
+    src: local('MullerRegularitalic'),
+      url('../fonts/MullerRegularItalic.woff2') format("woff2"),
+      url('../fonts/MullerRegularItalic.woff') format("woff");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'OpenSans';
+    src: local('OpenSansRegular'),
+      url('../fonts/OpenSans-Regular.woff2') format("woff2"),
+      url('../fonts/OpenSans-Regular.woff') format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+:root {
+  --dark: #121723;
+  --light-dark: #292E39;
+  --dark-grey: #a1a6b4;
+  --grey: #d2d5dd;
+  --light-grey: #e6e8ec;
+  --bronz: #bb793e;
+  --light-bronz: #f0d288;
+  --blue: #0039a6;
+  --red: #d52b1e;
+  --dark-purple: #4f28a5;
+  --purple: #6d31ee;
+  --light-purple: #aa9dfa;
+  --ultra-light-grey: #f5f6f7;
+  --white: #fff;
+  --black: #000;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	ox-sizing: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.page {
+  min-width: 320px;
+  background-color: var(--white);
+  color: var(--black);
+  font-family: 'Muller', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+
+}
+
+/*--global--*/
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: block;
+  max-width: max-content;
+  padding: 25px 54px;
+  border-radius: 40px;
+  background: var(--purple);
+  color: var(--white);
+}
+
+.title-h2 {
+  font-weight: 400;
+  font-size: 48px;
+}
+
+/*--header--*/
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1140px;
+  padding: 34px 15px;
+  margin: 0 auto;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  gap: 58.75px;
+  color: var(--dark);
+}
+
+.nav__item {
+  font-size: 20px;
+}
+
+.header__search {
+  cursor: pointer;
+}
+
+/*--hero--*/
+
+.hero__container {
+  padding: 94px 0;
+  background: transparent no-repeat right center;
+  background-image: url("../img/mic-main.png");
+}
+
+.hero__title {
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-size: 60px;
+  color: var(--dark);
+}
+
+.hero__title span {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.hero__descr {
+  margin-bottom: 45px;
+  max-width: 635px;
+}
+
+/*--podcasts--*/
+
+.podcast {
+  background: var(--light-grey);
+  padding: 94px 0;
+}
+
+.podcast__title {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 48px;
+  color: var(--dark);
+}
+
+.podcast__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+}
+
+.podcast__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.podcast__item:nth-child(2n+1) {
+  margin-right: 30px;
+}
+
+.podcast__item {
+  position: relative;
+  flex-basis: 263px;
+  flex-grow: 1;
+  padding: 40px 15px 40px 142px;
+  background: no-repeat left center;
+  background-color: var(--white);
+}
+
+.podcast__item--img1 {
+  background-image: url("../img/podcast-img1.jpg");
+}
+
+.podcast__item--img2 {
+  background-image: url("../img/podcast-img2.jpg");
+}
+
+.podcast__item--img3 {
+  background-image: url("../img/podcast-img3.jpg");
+}
+
+.podcast__item--img4 {
+  background-image: url("../img/podcast-img4.jpg");
+}
+
+.podcast__item--img5 {
+  background-image: url("../img/podcast-img5.jpg");
+}
+
+.podcast__item--img6 {
+  background-image: url("../img/podcast-img6.jpg");
+}
+
+.podcast__item--img7 {
+  background-image: url("../img/podcast-img7.jpg");
+}
+
+.podcast__item--img8 {
+  background-image: url("../img/podcast-img8.jpg");
+}
+
+
+.podcast__time {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: var(--dark);
+}
+
+.podcast__name {
+  margin-bottom: 4px;
+  font-size: 20px;
+  color: var(--dark);
+}
+
+.podcast__lead {
+  color: var(--dark-grey);
+}
+
+.podcast__date {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 3px 8.5px;
+  background-color: var(--light-grey);
+  font-size: 10px;
+  color: var(--dark);
+}
+
+/*--broadcast--*/
+
+.broadcast {
+  padding: 94px 0;
+}
+
+.broadcast__title {
+  color: var(--dark);
+}
