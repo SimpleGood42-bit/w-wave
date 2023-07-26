@@ -28,10 +28,10 @@
           </svg>
       </a>
       <ul class="header__nav nav">
-        <li class="nav__item"><a href="#podcasts" class="nav__link">Подкасты</a></li>
-        <li class="nav__item"><a href="#broadcasts" class="nav__link">Передачи</a></li>
-        <li class="nav__item"><a href="#guests" class="nav__link">Гости</a></li>
-        <li class="nav__item"><a href="#playlists" class="nav__link">Плейлисты</a></li>
+        <li class="nav__item"><a href="#podcast" class="nav__link">Подкасты</a></li>
+        <li class="nav__item"><a href="#broadcast" class="nav__link">Передачи</a></li>
+        <li class="nav__item"><a href="#guest" class="nav__link">Гости</a></li>
+        <li class="nav__item"><a href="#playlist" class="nav__link">Плейлисты</a></li>
         <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
       </ul>
       <svg class="header__search" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,13 +48,13 @@
         Привет, на&nbsp;связи W-Wave! Раньше мы&nbsp;были изданием, а&nbsp;теперь пробуем себя в&nbsp;разговорном жанре.
         Говорим о&nbsp;музыке, политике, истории, науке и&nbsp;культуре. Здесь, помимо прямого эфира&nbsp;&mdash; архив передач и&nbsp;многое другое:)
       </p>
-      <a class="hero__btn btn" href="#">слушать эфир</a>
+      <a class="hero__btn btn" href="#">Cлушать эфир</a>
     </div>
   </section>
 
-  <section class="podcast">
+  <section class="podcast" id="podcast">
     <div class="container">
-      <h2 class="podcast__title" id="podcast title-h2">Подкасты</h2>
+      <h2 class="podcast__title title-h2" >Подкасты</h2>
     <ul class="podcast__list">
       <li class="podcast__item podcast__item--img1">
         <time class="podcast__time" datetime="PT15M43S" >15:43</time>
@@ -108,10 +108,258 @@
     </div>
   </section>
 
-  <section class="broadcast">
+  <section class="broadcast" id="broadcast">
+    <div class="container broadcast__box">
+      <div class="broadcast__title-box">
+        <h2 class="broadcast__title title-h2">Передачи</h2>
+        <ul class="broadcast__archive-list">
+          <li class="broadcast__archive-item">
+            <a class="broadcast__archive-btn btn" href="#">Архив</a>
+          </li>
+          <li class="broadcast__archive-item">В архив попадают все передачи, которые вы пропустили! Enjoy:)</li>
+        </ul>
+      </div>
+      <ul class="broadcast__list">
+        <li class="broadcast__item broadcast__item--img1">
+          <h3 class="broadcast__name">О людях и книгах</h3>
+          <p class="broadcast__descr">Анонсируется отдельно</p>
+          <a class="broadcast__more-link" href="#">
+            <p class="broadcast__more">Подробнее</p>
+            <svg class="broadcast__more-arrow" width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" fill="#121723"/>
+            </svg>
+          </a>
+        </li>
+        <li class="broadcast__item broadcast__item--img2">
+          <h3 class="broadcast__name">Графомания td</h3>
+          <p class="broadcast__descr">По понедельникам в 10:00</p>
+          <a class="broadcast__more-link" href="#">
+            <p class="broadcast__more">Подробнее</p>
+            <svg class="broadcast__more-arrow" width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" fill="#121723"/>
+            </svg>
+          </a>
+        </li>
+        <li class="broadcast__item broadcast__item--img3">
+          <h3 class="broadcast__name">Не рим, не Троя</h3>
+          <p class="broadcast__descr">По вторникам в 12:00</p>
+          <a class="broadcast__more-link" href="#">
+            <p class="broadcast__more">Подробнее</p>
+            <svg class="broadcast__more-arrow" width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" fill="#121723"/>
+            </svg>
+          </a>
+        </li>
+        <li class="broadcast__item broadcast__item--img4">
+          <h3 class="broadcast__name">Эрудит</h3>
+          <p class="broadcast__descr">По пятницам в 17:00</p>
+          <a class="broadcast__more-link" href="#">
+            <p class="broadcast__more">Подробнее</p>
+            <svg class="broadcast__more-arrow" width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" fill="#121723"/>
+            </svg>
+          </a>
+        </li>
+        <li class="broadcast__item broadcast__item--img5">
+          <h3 class="broadcast__name">Тонкости эпох</h3>
+          <p class="broadcast__descr">По субботам в 10:00</p>
+          <a class="broadcast__more-link" href="#">
+            <p class="broadcast__more">Подробнее</p>
+            <svg class="broadcast__more-arrow" width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" fill="#121723"/>
+            </svg>
+          </a>
+        </li>
+        <li class="broadcast__item broadcast__item--img6">
+          <h3 class="broadcast__name">Живые мысли</h3>
+          <p class="broadcast__descr">По воскресеньям в 15:30</p>
+          <a class="broadcast__more-link" href="#">
+            <p class="broadcast__more">Подробнее</p>
+            <svg class="broadcast__more-arrow" width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" fill="#121723"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="guest" id="guest">
     <div class="container">
-      <h2 class="broadcast__title title-h2">Передачи</h2>
+      <h2 class="title-h2 guest__title">Гости</h2>
+      <h4 class="guest__subtitle">У нас бывают:</h4>
+      <p class="guest__subtitle-descr">Блогеры, арт-критики и деятели искусства, музыканты, молодые учёные и люди науки, историки, филологи
+        и много других интересных гостей!
+      </p>
+      <ul class="guest__list">
+        <li class="guest__item">
+          <ul class="guest__article">
+            <li class="guest__photo">
+              <img class="guest__img" src="/img/guest-1.jpg" alt="Фото Ольги Мартыновой">
+            </li>
+            <li class="guest__descr">
+              <h3 class="guest__name">Ольга Мартынова</h3>
+              <p class="guest__text">Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты «Коммерсантъ».
+                Ведёт активную блогерскую деятельность как куратор музея «Гараж», коим является с 2016 года.
+              </p>
+              <a class="guest__btn" href="#">Эфиры с гостем</a>
+            </li>
+          </ul>
+        </li>
+        <li class="guest__item">
+          <ul class="guest__article">
+            <li class="guest__photo">
+              <img class="guest__img" src="/img/guest-2.jpg" alt="Фото Дениса Гришина">
+            </li>
+            <li class="guest__descr">
+              <h3 class="guest__name">Денис Гришин</h3>
+              <p class="guest__text">Однозначно, элементы политического процесса являются только методом политического участия и смешаны с не уникальными
+                данными до степени совершённой неузнаваемости, из-за чего возрастает их статус бесполезности.
+              </p>
+              <a class="guest__btn" href="#">Эфиры с гостем</a>
+            </li>
+          </ul>
+        </li>
+        <li class="guest__item">
+          <ul class="guest__article">
+            <li class="guest__photo">
+              <img class="guest__img" src="/img/guest-3.jpg" alt="Фото Ольги Мартыновой">
+            </li>
+            <li class="guest__descr">
+              <h3 class="guest__name">Ольга Мартынова</h3>
+              <p class="guest__text">С другой стороны, высококачественный прототип будущего проекта выявляет срочную потребность дальнейших направлений
+                развития. В рамках спецификации современных стандартов, реплицированные с зарубежных источников.
+              </p>
+              <a class="guest__btn" href="#">Эфиры с гостем</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
 
+  <section class="playlist" id="playlist">
+    <div class="container playlist__box">
+      <div class="playlist__title-box">
+        <h2 class="playlist__title title-h2">Плейлисты</h2>
+        <p class="playlist__title-descr">
+          Блогеры, арт-критики и деятели искусства, музыканты, молодые учёные и люди науки, историки, филологи и много других интересных гостей!
+        </p>
+        <span class="playlist__title-coppy">© 2021 l W-Wave</span>
+        <svg class="playlist__title-agelimit" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.68945 20H7.74023V13.8945C7.74023 13.3867 7.75586 12.9062 7.78711 12.4531C7.70508 12.5352 7.61328 12.6211 7.51172 12.7109C7.41016 12.8008 6.94531 13.1816 6.11719 13.8535L5.60156 13.1855L7.86914 11.4336H8.68945V20ZM14.7891 11.3105C15.5703 11.3105 16.1895 11.4922 16.6465 11.8555C17.1035 12.2188 17.332 12.7207 17.332 13.3613C17.332 13.7832 17.2012 14.168 16.9395 14.5156C16.6777 14.8633 16.2598 15.1797 15.6855 15.4648C16.3809 15.7969 16.875 16.1465 17.168 16.5137C17.4609 16.877 17.6074 17.2988 17.6074 17.7793C17.6074 18.4902 17.3594 19.0586 16.8633 19.4844C16.3672 19.9062 15.6875 20.1172 14.8242 20.1172C13.9102 20.1172 13.207 19.918 12.7148 19.5195C12.2227 19.1172 11.9766 18.5488 11.9766 17.8145C11.9766 16.834 12.5742 16.0703 13.7695 15.5234C13.2305 15.2188 12.8438 14.8906 12.6094 14.5391C12.375 14.1836 12.2578 13.7871 12.2578 13.3496C12.2578 12.7285 12.4863 12.2344 12.9434 11.8672C13.4043 11.4961 14.0195 11.3105 14.7891 11.3105ZM12.9375 17.8379C12.9375 18.3066 13.0996 18.6719 13.4238 18.9336C13.752 19.1953 14.2109 19.3262 14.8008 19.3262C15.3828 19.3262 15.8359 19.1895 16.1602 18.916C16.4844 18.6426 16.6465 18.2676 16.6465 17.791C16.6465 17.4121 16.4941 17.0762 16.1895 16.7832C15.8848 16.4863 15.3535 16.1992 14.5957 15.9219C14.0137 16.1719 13.5918 16.4492 13.3301 16.7539C13.0684 17.0547 12.9375 17.416 12.9375 17.8379ZM14.7773 12.1016C14.2891 12.1016 13.9062 12.2188 13.6289 12.4531C13.3516 12.6875 13.2129 13 13.2129 13.3906C13.2129 13.75 13.3281 14.0586 13.5586 14.3164C13.7891 14.5742 14.2148 14.832 14.8359 15.0898C15.3945 14.8555 15.7891 14.6035 16.0195 14.334C16.2539 14.0645 16.3711 13.75 16.3711 13.3906C16.3711 12.9961 16.2285 12.6836 15.9434 12.4531C15.6621 12.2188 15.2734 12.1016 14.7773 12.1016ZM22.0605 15.3652H24.4746V16.1738H22.0605V18.6699H21.2461V16.1738H18.8438V15.3652H21.2461V12.8574H22.0605V15.3652Z" fill="#A1A6B4"/>
+          <rect x="0.5" y="0.5" width="29" height="29" rx="14.5" stroke="#A1A6B4"/>
+        </svg>
+      </div>
+      <ul class="playlist__list">
+        <li class="playlist__item playlist__item--img1">
+          <h3 class="playlist__name">О людях и книгах</h3>
+          <p class="playlist__descr">Анонсируется отдельно</p>
+          <svg class="playlist__flag" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E"/>
+          </svg>
+        </li>
+        <li class="playlist__item playlist__item--img2">
+          <h3 class="playlist__name">Графомания td</h3>
+          <p class="playlist__descr">По понедельникам в 10:00</p>
+          <svg class="playlist__flag" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E"/>
+          </svg>
+        </li>
+        <li class="playlist__item playlist__item--img3">
+          <h3 class="playlist__name">Не рим, не Троя</h3>
+          <p class="playlist__descr">По вторникам в 12:00</p>
+          <svg class="playlist__flag" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E"/>
+          </svg>
+        </li>
+        <li class="playlist__item playlist__item--img4">
+          <h3 class="playlist__name">Эрудит</h3>
+          <p class="playlist__descr">По пятницам в 17:00</p>
+          <svg class="playlist__flag" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E"/>
+          </svg>
+        </li>
+        <li class="playlist__item playlist__item--img5">
+          <h3 class="playlist__name">Тонкости эпох</h3>
+          <p class="playlist__descr">По субботам в 10:00</p>
+          <svg class="playlist__flag" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E"/>
+          </svg>
+        </li>
+        <li class="playlist__item playlist__item--img6">
+          <h3 class="playlist__name">Живые мысли</h3>
+          <p class="playlist__descr">По воскресеньям в 15:30</p>
+          <svg class="playlist__flag" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E"/>
+          </svg>
+        </li>
+        <li class="playlist__item playlist__item--img7">
+          <h3 class="playlist__name">О людях и книгах</h3>
+          <p class="playlist__descr">Анонсируется отдельно</p>
+          <svg class="playlist__flag" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E"/>
+          </svg>
+        </li>
+        <li class="playlist__item playlist__item--img8">
+          <h3 class="playlist__name">Графомания td</h3>
+          <p class="playlist__descr">По понедельникам в 10:00</p>
+          <svg class="playlist__flag" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E"/>
+          </svg>
+        </li>
+        <li class="playlist__item playlist__item--img9">
+          <h3 class="playlist__name">Не рим, не Троя</h3>
+          <p class="playlist__descr">По вторникам в 12:00</p>
+          <svg class="playlist__flag" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E"/>
+          </svg>
+        </li>
+        <li class="playlist__item playlist__item--img10">
+          <h3 class="playlist__name">Эрудит</h3>
+          <p class="playlist__descr">По пятницам в 17:00</p>
+          <svg class="playlist__flag" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E"/>
+          </svg>
+        </li>
+        <li class="playlist__item playlist__item--img11">
+          <h3 class="playlist__name">Тонкости эпох</h3>
+          <p class="playlist__descr">По субботам в 10:00</p>
+          <svg class="playlist__flag" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E"/>
+          </svg>
+        </li>
+        <li class="playlist__item playlist__item--img12">
+          <h3 class="playlist__name">Живые мысли</h3>
+          <p class="playlist__descr">По воскресеньям в 15:30</p>
+          <svg class="playlist__flag" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V12H0V0Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H16V12H0V4Z" fill="#0039A6"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8H16V12H0V8Z" fill="#D52B1E"/>
+          </svg>
+        </li>
+      </ul>
     </div>
   </section>
 </body>
