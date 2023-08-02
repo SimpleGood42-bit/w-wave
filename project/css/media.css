@@ -121,7 +121,7 @@
   }
 
   .about__input {
-    max-width: 397px;
+    max-width: 396px;
   }
 
   .about__img {
@@ -132,5 +132,179 @@
 
   .footer__container {
     margin-bottom: 115px;
+  }
+}
+
+@media (max-width: 1023px) {
+
+  /*--header--*/
+
+  .header__container {
+    padding: 28px 115px 22px;
+  }
+
+  .nav__item {
+    font-size: 16px;
+  }
+
+  /*--hero--*/
+
+  .hero__container {
+    padding: 91px 115px 88px;
+    background-image: none;
+  }
+
+  .hero__descr {
+    margin-bottom: 20px;
+  }
+
+  .container {
+    padding: 0 115px;
+  }
+
+  /*--broadcast--*/
+
+  .broadcast {
+    padding: 94px 0 29px;
+  }
+
+  .broadcast__box {
+    flex-direction: column;
+    gap: unset;
+  }
+
+  .broadcast__title--mobile {
+    display: block;
+    margin-bottom: 110px;
+  }
+
+  .broadcast__archive-list--mobile {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 0 0 95px;
+    background-position: center left 2px;
+    background-size: 70px 96px;
+  }
+
+  .broadcast__archive-btn {
+    margin-bottom: 10px;
+  }
+
+  .broadcast__list {
+    margin-bottom: 90px;
+  }
+
+  .broadcast__title-box {
+    display: none;
+  }
+
+  /*--guest--*/
+
+  .guest__article {
+    flex-direction: column;
+    gap: 27px;
+  }
+
+  .guest__img {
+    width: 100%;
+  }
+
+  .guest__descr {
+    flex-basis: unset;
+  }
+
+  .guest__text {
+    max-width: 360px;
+    margin-bottom: 35px;
+  }
+
+  /*--playlist--*/
+
+  .playlist {
+    padding: 94px 0 113px;
+  }
+
+  /*--market--*/
+
+  .market {
+    padding: 54px 0 97px;
+  }
+
+  .market__stick-new {
+    max-width: 160px;
+    top: 0px;
+    left: 114px;
+  }
+
+  .market__box {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .market__pic {
+    flex-shrink: unset;
+  }
+
+  .market__title {
+    max-width: 400px;
+  }
+
+  /*--about--*/
+
+  .about__header {
+    position: relative;
+    padding-right: 0;
+    padding-bottom: 142px;
+    background-position: bottom right;
+    background-size: 112px 112px;
+  }
+
+  .about__header::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: -114px;
+    height: 114px;
+    width: 515px;
+    background-image: url("../img/about-spiral.svg");
+    background-repeat: no-repeat;
+  }
+
+  .about__list {
+    justify-content: center;
+  }
+
+  .about__item {
+    flex-basis: 254px;
+  }
+
+  .about__input {
+    max-width: 540px;
+  }
+
+  /*--footer--*/
+
+  .footer__container {
+    margin-bottom: 100px;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .footer__logo {
+    align-items: center;
+    gap: 18px;
+  }
+
+  .footer__icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .nav__column-list {
+    gap: 30px;
+  }
+
+  .footer__nav {
+    flex-basis: unset;
   }
 }

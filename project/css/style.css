@@ -266,6 +266,8 @@ li {
 /*--hero--*/
 
 .hero__container {
+  max-width: 1140px;
+  margin: 0 auto;
   padding: 90px 15px 94px;
   background: transparent no-repeat right 15px top 26px;
   background-image: url("../img/mic-main.png");
@@ -390,11 +392,16 @@ li {
   gap: 30px;
 }
 
+.broadcast__title--mobile {
+  display: none;
+}
+
 .broadcast__title-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 
 .broadcast__title {
   color: var(--dark);
@@ -524,6 +531,10 @@ li {
   width: 255px;
   color: var(--dark-grey);
   line-height: 150%;
+}
+
+.broadcast__archive-list--mobile {
+  display: none;
 }
 
 /*--guest--*/
